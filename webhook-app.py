@@ -8,14 +8,14 @@ from ConfigParser import ConfigParser
 config = ConfigParser()
 config.read('settings.conf')
 app_secret = config.get('default', 'app_secret')
-endpoint = config.get('default', 'endpoint')
+# endpoint = config.get('default', 'endpoint')
 secret = config.get('default', 'secret')
 default_receiver = config.get('default', 'default_receiver')
 
 app = Flask(__name__)  # Standard Flask app
 app.secret_key = app_secret
 app.debug = True
-webhook = Webhook(app, endpoint='/'+endpoint, secret=secret) # Defines '/postreceive' endpoint
+webhook = Webhook(app, endpoint='/payload', secret=secret) # Defines '/postreceive' endpoint
 
 @app.route("/")        # Standard Flask endpoint
 def hello_world():
