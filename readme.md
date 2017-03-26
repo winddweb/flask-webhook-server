@@ -17,6 +17,12 @@ github_bot  10:06:39
 122786: fix: more bugs it's insane #123 - Yifeng
 ```
 
+## Just in case
+
+if you don't know qq, please google it. 
+
+You need an account, and probably a cellphone app installed before you can run qqbot.
+
 ## Setup
 
 Change the settings.conf before you start the server.
@@ -24,8 +30,6 @@ Change the settings.conf before you start the server.
 Also don't forget to setup the webhook on Github for your repository.
 
 Change the `settings-example.conf` to `settings.conf`
-
-
 
 ## Dependencies
 
