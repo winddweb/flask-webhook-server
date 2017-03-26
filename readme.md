@@ -31,6 +31,24 @@ Also don't forget to setup the webhook on Github for your repository.
 
 Change the `settings-example.conf` to `settings.conf`
 
+## Running
+
+Run the server by this command
+
+```bash
+$ python2.7 webhook-app.py
+```
+
+Run `qqbot`
+
+```bash
+$ qqbot
+```
+
+For more info on qqbot, check their documentation.
+
+
+
 ## Dependencies
 
 - [qqbot](https://github.com/pandolia/qqbot)
